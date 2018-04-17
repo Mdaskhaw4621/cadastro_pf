@@ -1,1 +1,1 @@
-<h1 style="color:red;">Cadastro Pessoa Fisíca</h1>
+<h1>Cadastro Pessoa Fisíca</h1>
