@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 15-Abr-2018 às 01:15
+-- Generation Time: 16-Abr-2018 às 14:07
 -- Versão do servidor: 5.7.17
 -- PHP Version: 5.6.30
 
@@ -34,13 +34,13 @@ CREATE TABLE `pessoa_f` (
   `endereco` varchar(150) NOT NULL,
   `cidade` varchar(50) NOT NULL,
   `bairro` varchar(50) NOT NULL,
-  `telefone` varchar(10) NOT NULL,
-  `rg` varchar(10) NOT NULL,
-  `sexo` varchar(9) NOT NULL,
-  `estado` varchar(3) NOT NULL,
-  `cep` varchar(10) NOT NULL,
-  `celular` varchar(11) NOT NULL,
-  `cpf` varchar(11) NOT NULL
+  `telefone` varchar(13) NOT NULL,
+  `rg` varchar(13) NOT NULL,
+  `sexo` set('F','M') NOT NULL,
+  `estado` set('AC','AP','BA','DF','GO','MG','PB','PE','RJ','RS','RR','SP','TO','AL','AM','CE','ES','MA','MS','PA','PR','PI','RN','RO','SC','SE') NOT NULL,
+  `cep` varchar(11) NOT NULL,
+  `celular` varchar(14) NOT NULL,
+  `cpf` varchar(14) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
